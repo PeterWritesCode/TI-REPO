@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/alertas.css">
+    <title>SPADA</title>
+</head>
+<body>
+<!---------Alertas----------->
+<div class="grid">
+    <h1>Notificações</h1>
+    <div class="center-image">
+        <input type="checkbox" id="toggle" class="toggleCheckbox" />
+        <label style="margin-top: 20px;" for="toggle" class='toggleContainer'>
+            <div>Notificações recentes</div>
+
+            <div>Notificações passadas</div>
+        </label>
+    </div>
+    <div id="notificacoes-recentes" class="scroll">
+        <h2>Recentes</h2>
+        <hr>
+        <div class="alert">
+            <img src="../imgs/mensagem-alerta.svg" alt="Imagem de Alerta">
+            <div class="text">
+                <p><b>Alerta de fumo e gás:</b> O utilizador foi avisado de que existe um nível elevado de fumo!</p>
+                <p style="font-size: 13px; margin-top: 5px;">7 de junho de 2024 às 12:30</p>
+                <p style="font-size: 13px; margin-top: 5px;"><img src="../imgs/localizacao.svg" alt="">Polo II - Coimbra </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="notificacoes-passadas" class="scroll">
+        <h2>Passadas</h2>
+        <hr>
+        <div class="alert" >
+            <img src="../imgs/mensagem-alerta.svg" alt="Imagem de Alerta">
+            <div class="text">
+                <p><b>Alerta de possível queda:</b> O utilizador apresentou sinais de uma possível queda!</p>
+                <p style="font-size: 13px; margin-top: 5px;">5 de junho de 2024 às 18:30</p>
+                <p style="font-size: 13px; margin-top: 5px;"><img src="../imgs/localizacao.svg" alt="">R Combatentes G Guerra 67 - Coimbra</p>
+            </div>
+        </div>
+        <div class="alert">
+            <img src="../imgs/mensagem-alerta.svg" alt="Imagem de Alerta">
+            <div class="text">
+                <p><b>Alerta de fumo e gás: </b> O utilizador foi avisado de que existe um nível elevado de fumo.</p>
+                <p style="font-size: 13px; margin-top: 5px;">21 de abril de 2024 às 11:45</p>
+                <p style="font-size: 13px; margin-top: 5px;"><img src="../imgs/localizacao.svg" alt="">R Combatentes G Guerra 67 - Coimbra</p>
+            </div>
+        </div>
+        <div class="alert">
+            <img src="../imgs/mensagem-alerta.svg" alt="Imagem de Alerta">
+            <div class="text">
+                <p><b>Alerta de fumo e gás: </b> O utilizador foi avisado de que existe um nível elevado de fumo.</p>
+                <p style="font-size: 13px; margin-top: 5px;">20 de abril de 2024 às 17:32</p>
+                <p style="font-size: 13px; margin-top: 5px;"><img src="../imgs/localizacao.svg" alt="">R Combatentes G Guerra 67 - Coimbra</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------Navegação----------->
+<nav class="nav horizontal">
+    <ul>
+        <li>
+            <a href="../dados-pessoais/dados-pessoais-iniciar.html">
+                <img class="material-icons" src="../imgs/icone1_not_selected.svg" alt="dados paciente">
+            </a>
+        </li>
+        <li>
+            <a href="../alertas/alertas.html">
+                <img class="material-icons" src="../imgs/icone2_selected.svg" alt="alertas">
+            </a>
+        </li>
+        <li>
+            <a href="../definicoes/definicoes.html">
+                <img class="material-icons" src="../imgs/icone3_not_selected.svg" alt="definições">
+            </a>
+        </li>
+    </ul>
+</nav>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggleCheckbox = document.getElementById('toggle');
+        var notificacoesRecentes = document.getElementById('notificacoes-recentes');
+        var notificacoesPassadas = document.getElementById('notificacoes-passadas');
+
+        toggleCheckbox.addEventListener('change', function () {
+            if (toggleCheckbox.checked) {
+                notificacoesRecentes.style.display = 'none';
+                notificacoesPassadas.style.display = 'block';
+            } else {
+                notificacoesRecentes.style.display = 'block';
+                notificacoesPassadas.style.display = 'none';
+            }
+        });
+    });
+</script>
+</html>

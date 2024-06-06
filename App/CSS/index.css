@@ -1,0 +1,43 @@
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+.botao {
+    position: absolute;
+    top: 100%;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 20px;
+    background-color: white;
+    color: var(--texto);
+    border: 1px solid var(--texto);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.splash{
+    cursor : pointer;
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    height : 100%;
+    width : 100%;
+    transform : translate(-50%,-50%);
+    background-color: var(--background);
+    transition : all ease-in-out 600ms;
+}
+.hidden{
+    transition : 0.5s;
+    display : none;
+}
+.splash-header {
+    float: left;
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do contêiner pai */
+    height: auto; /* Define a altura como automática para manter a proporção da imagem */
+    display: block; /* Para garantir que a imagem não tenha margens indesejadas */
+    margin: auto;
+}

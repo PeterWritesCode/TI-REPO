@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/definicoes.css">
+    <title>SPADA</title>
+</head>
+<body>
+<!---------Definições----------->
+<div class="grid">
+    <h1 style="margin-bottom: 10px">Definições</h1>
+    <!---------Perfil Cuidador----------->
+    <div class="perfil-cuidador">
+        <div class="titulo">
+            <img src="../imgs/hand.svg" alt="perfil cuidador">&nbsp;&nbsp; Perfil Cuidador
+        </div>
+        <hr>
+        <p class="subtitulo-1">Dados pessoais
+            <a href="dados-cuidador.php">
+                <img class="right" src="../imgs/seta.svg" alt="seta">
+            </a>
+        </p>
+        <p class="subtitulo-2">
+            Alterar password
+            <a href="../definicoes/alterar-password.html">
+                <img class="right" src="../imgs/seta.svg" alt="seta">
+            </a>
+        </p>
+    </div>
+    <!---------Alertas----------->
+    <div class="alertas">
+        <div class="titulo">
+            <img src="../imgs/belt.svg" alt="sino">&nbsp;&nbsp; Notificações
+        </div>
+        <hr>
+        <p class="subtitulo-2">Notificações
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label></p>
+    </div>
+    <!---------Informações----------->
+    <div class="informacoes">
+        <div class="titulo">
+            <img src="../imgs/info.svg" alt="informações">&nbsp;&nbsp; Informações
+        </div>
+        <hr>
+        <p class="subtitulo-2">About SPADA <a href="sobre.html"><img class="right" src="../imgs/seta.svg" alt="seta"></a></p>
+    </div>
+    <div class="center-image">
+        <!-- Botão de logout -->
+        <form action="../PHP/logout.php" method="POST">
+           <input class="btn" type="submit" value="Logout">
+        </form>
+    </div>
+</div>
+
+<!---------Navegação----------->
+<nav class="nav horizontal">
+    <ul>
+        <li>
+            <a href="../dados-pessoais/dados-pessoais-iniciar.html">
+                <img class="material-icons" src="../imgs/icone1_not_selected.svg" alt="dados paciente">
+            </a>
+        </li>
+        <li>
+            <a href="../alertas/alertas.html">
+                <img class="material-icons" src="../imgs/icone2-not_selected.svg" alt="alertas">
+            </a>
+        </li>
+        <li>
+            <a href="../definicoes/definicoes.html">
+                <img class="material-icons" src="../imgs/icone3_selected.svg" alt="definições">
+            </a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

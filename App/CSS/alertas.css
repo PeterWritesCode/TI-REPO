@@ -1,0 +1,80 @@
+h2{
+    margin-top: 10px;
+}
+.alerta-inicio{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.toggleContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid var(--texto);
+    border-radius: 60px;
+    background: var(--notificacoes);
+    font-weight: bold;
+    color: var(--texto);
+    cursor: pointer;
+}
+.toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    border-radius:60px;
+    background: var(--background);
+    transition: all 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+    left: 50%;
+}
+.toggleContainer div {
+    padding: 6px;
+    text-align: center;
+    z-index: 1;
+}
+.toggleCheckbox {
+    display: none;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+    color: var(--background);
+    transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+    color: var(--texto);
+    transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child{
+    color: var(--texto);
+    transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child{
+    color: var(--background);
+    transition: color 0.3s;
+}
+
+
+#notificacoes-recentes, #notificacoes-passadas {
+    display: none;
+}
+
+.alert {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.alert img {
+    margin-right: 10px;
+}
+
+.text {
+    padding-left: 20px;
+    text-align: left;
+    font-weight: 200;
+}
+

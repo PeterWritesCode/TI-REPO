@@ -1,0 +1,125 @@
+.titulo{
+    font-size: 20px;
+}
+.subtitulo-1{
+    margin-bottom: 20px;
+}
+.subtitulo-2{
+    margin-bottom: 40px;
+}
+.right{
+    float: right;
+}
+.img-SPADA{
+    margin-top: 50px;
+}
+.about-SPADA{
+    margin-top: 60px;
+}
+.about-SPADA p  {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.alterar-password p  {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+/*Botão das notificações*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    float: right;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider { background-color: var(--notificacoes); }
+input:focus + .slider { box-shadow:0 0 2px var(--texto); }
+input:checked + .slider:before {
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round { border-radius: 34px; }
+.slider.round:before { border-radius: 50%; }
+
+/*alterar password*/
+.alterar-pass-container {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="name"],input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    color: var(--texto);
+    border: 1px solid var(--texto);
+    border-radius: 30px;
+    display: flex;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--texto);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*Olho fechado password*/
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-toggle img {
+    width: 20px;
+    height: auto;
+}
+a {
+    color: var(--texto);
+    text-decoration: underline;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/login-sign-up.css">
+    <title>SPADA</title>
+</head>
+<body>
+<!---------Login----------->
+<div class="grid">
+    <div class="right">
+        <a href="login.html" style="margin-top: 30px;">Log in</a>
+    </div>
+    <!--Forms login-->
+    <!--Início do forms-->
+    <div class="login-container">
+        <h1 style="margin-bottom: 20px;">Sign up</h1>
+        <form action="../PHP/sign-up.php" class="form" method="POST" enctype="multipart/form-data" >
+            <!--Email  name="email" -> $_POST['email']-->
+            <div class="form-group">
+                <label for="email" style="font-weight: 200;">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!--Nome Completo name="nome" -> $_POST['nome']-->
+            <div class="form-group">
+                <label for="nome_cuidador" style="font-weight: 200;">Nome</label>
+                <input type="text" id="nome_cuidador" name="nome_cuidador" required>
+            </div>
+            <!--Password name="password" -> $_POST['password']-->
+            <div class="form-group">
+                <label for="password" style="font-weight: 200;">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" required>
+                    <div class="password-toggle">
+                        <img src="../imgs/olho-fechado.svg" alt="olho fechado" id="eyeicon">
+                    </div>
+                </div>
+            </div>
+            <input class="buttonsign-up" type="submit" name="registerBtn" value="Sign up"/>
+            <p style="font-weight: 200; margin-top: 20px;">Já tem uma conta criada? Faça <a href="login.html"><b>Log in</b></a></p>
+        </form>
+    </div>
+</div>
+</body>
+<script src="../password.js"></script>
+</html>

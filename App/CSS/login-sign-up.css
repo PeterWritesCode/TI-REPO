@@ -1,0 +1,76 @@
+.right {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--texto);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.login-container {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="name"],input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    color: var(--texto);
+    border: 1px solid var(--texto);
+    border-radius: 30px;
+    display: flex;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--texto);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.buttonsign-up{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--texto);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+a {
+    color: var(--texto);
+    text-decoration: underline;
+}
+/*Olho fechado password*/
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-toggle img {
+    width: 20px;
+    height: auto;
+}

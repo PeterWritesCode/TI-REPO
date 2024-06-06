@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPADA</title>
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<div class="container">
+    <img class="splash-header" src="imgs/spada2.svg" alt="">
+    <a href="log-in-sign-up/login.html" class="botao">Iniciar</a>
+     <!-- Splash Screen code starts here  -->
+    <div class="splash">
+        <img class="splash-header" src="imgs/spada.svg" alt="">
+    </div>
+    <!-- Splash Screen code ends here  -->
+</div>
+</body>
+<script>
+    var splashScreen = document.querySelector('.splash');
+    splashScreen.addEventListener('click',()=>{
+        splashScreen.style.opacity = 0;
+        setTimeout(()=>{
+            splashScreen.classList.add('hidden')
+        },610)
+    })
+</script>
+</html>

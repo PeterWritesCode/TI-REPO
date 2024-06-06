@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue", sans-serif;
+    color: var(--texto);
+    min-height: 100vh;
+    background-color: var(--background);
+    overflow: hidden;
+    caret-color: transparent;
+}
+/*-------------Cores------------*/
+:root {
+    --background: #EFF5F3;
+    --texto: #281F5E;
+    --claro: #B3B5C6;
+    --notificacoes: rgba(68, 61, 115, 0.58);
+}
+/*-------------Grid-------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5%;/*20px*/
+    margin: 0 10%;/*40px*/
+}
+/*--------Menu horizontal-------*/
+nav {
+    background: var(--background);
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 4px 8px var(--texto);
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+nav img{
+    width: 100%;
+    /*max-width: 80px;*/
+    height: auto;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 15px;
+}
+/* Media queries mobile */
+@media only screen and (max-width: 200px) {
+    nav {
+        padding: 0 60px; /* Reduz o preenchimento horizontal */
+        top: 0;
+        border-radius: 0; /* Remove a borda arredondada */
+        bottom: 0;
+        left: 0;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    nav img {
+        max-width: 80px; /* Aumenta o tamanho dos ícones para dispositivos menores */
+    }
+}
+/*-----Centralizar imagens-----*/
+.center-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+/*-----Títulos das páginas-----*/
+h1{
+    padding-top: 30px;
+
+}
+/*-----Linhas-----*/
+hr{
+    border: 0.5px solid var(--texto);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+/*-----Botões-----*/
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: white;
+    color: var(--texto);
+    border: 1px solid var(--texto);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*scroll*/
+.scroll {
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
